@@ -1,4 +1,6 @@
 ---
+import { Icon } from 'astro-icon/components';
+
 const { title } = Astro.props;
 const products = [
 	{
@@ -28,9 +30,42 @@ const products = [
 		<title>{title}</title>
 	</head>
 	<body>
-		<div class="header">
-			<div class="container header_info">
-				contenido de la cabecera
+		<div class="bg-zinc-800  ">
+			<div class="container flex justify-around max-w-[80%] m-auto">
+
+				<img src="/public/AliExpres-logo.webp" class="h-[61px] " />
+
+				<div class=" my-auto relative">
+					<input type="search" placeholder="buscar..." class="h-9 rounded-full pl-5 outline-none pr-96 ">
+					<div class="bg-zinc-800 inline-block right-1 top-1 text-white rounded-xl px-2 absolute">
+						<Icon name="mdi:search" class = "size-7" />
+					</div>
+				</div>
+
+				<div class="text-white flex items-center justify-around container">
+					<div class=" flex">
+						<Icon name="mdi:qrcode" class = "size-8"  /> 
+						<div class="ml-2">
+							<div class="relative leading-3 ">Descarga la app </div>
+							<div>de aliexpress</div>
+						</div>
+						
+					</div>
+					<div class="flex">
+						<Icon name="flagpack:co" />
+						<div class="ml-2">
+							<div class="relative leading-3">es/</div>
+							<div>COP</div>
+							
+						</div>
+					</div>
+					<div>
+						bienvenido
+					</div>
+					<div>
+						cesta
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="container banner">
@@ -64,36 +99,13 @@ const products = [
 	</body>
 </html>
 <style is:global>
-	.main_menu{
-		display: flex;
-		background-color: #EE4D2D;
-		height: 40px;
-		align-items: center;
-
-		
-	}
-	.main_menu a{
-		height: 100%;
-		display: flex;
-		align-items: center;
-		text-decoration: none;
-		color: #fff;
-		padding: 0 12px;
-		transition: background 300ms ease-in-out;
-	}
+	
+	
 
 	.main_menu a:hover{
 		background: #ff5a39;
 	}
-	.header{
-		background: #EE4D2D;
-	}
-	.header_info{
-		height: 80px;
-	}
-	.banner{
-		height: 240px;
-	}
+	
 	.product_list{
 		display: flex;
 		height: 80px;
@@ -122,11 +134,7 @@ const products = [
 	.footer{
 		height: 120px;
 	}
-	.container{
-		max-width: 1280px;
-		/* background:blue; */
-		margin: 0 auto;
-	}
+	
 	html, body{
 		margin: 0;
 		padding: 0;
