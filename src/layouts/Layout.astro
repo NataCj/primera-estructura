@@ -102,7 +102,9 @@ const products = [
 					href="#"
 					class="h-10 text-lg rounded-full border-2 text-center px-4 relative flex group"
 				>
-					todas las categorias
+					<Icon name="mdi:menu" class="m-auto top-7" />
+					<h2 class="m-auto">Todas las categorias</h2>
+					
 					<menu
 						class="hidden group-hover:block absolute bg-zinc-800 w-full left-0 top-7"
 					>
@@ -110,6 +112,7 @@ const products = [
 							<li>opcion 1</li>
 							<li>opcion 2</li>
 							<li>opcion 3</li>
+							<li>Opcion 4</li>
 						</ul>
 					</menu>
 				</a>
@@ -124,30 +127,61 @@ const products = [
 				<a href="h-10 text-lg pt-[6px]">More</a>
 			</div>
 		</div>
-		<div class="max-w-full bg-red-900 h-40 flex">
-			<div>
+		<div class="max-w-[90%] m-auto h-40 flex  ">
+			<div class="w-[20%] my-auto text-3xl font-semibold">
 				<div>Better choises,</div>
 				<div>better prices</div>
 			</div>
-			<div>
-				<Icon name="mdi:attach-money" />
-				<div>value for money</div>
-
-			</div>
-			<div>
-				<Icon name="mdi:users-outline" />
-				<div>shoppers worldwide</div>
-			</div>
-			<div>
-				<Icon name="mdi:truck-delivery-outline" />
-				<div>fast delivery</div>
-			</div>
-			<div>
-				<Icon name="mdi:users-outline" />
-				<div>shoppers worldwide</div>
+			<div class="flex  w-[80%] my-auto ">
+				<div class=" mx-9 my-auto  ">
+					<Icon name="mdi:attach-money" class="m-auto text-3xl"/>
+					<div class="text-lg font-semibold">value for money</div>
+				</div>
+				<div class=" mx-9">
+					<Icon name="mdi:users-outline"  class="m-auto text-3xl"/>
+					<div class="text-lg font-semibold">shoppers worldwide</div>
+				</div>
+				<div class=" mx-9" >
+					<Icon name="mdi:truck-delivery-outline" class="m-auto text-3xl"/>
+					<div class="text-lg font-semibold">fast delivery</div>
+				</div>
+				<div class=" mx-9">
+					<Icon name="mdi:credit-card-outline" class="m-auto text-3xl"/>
+					<div class="text-lg font-semibold">safe payments</div>
+				</div>
+				<div class=" mx-9">
+					<Icon name="mdi:sun-protection" class="m-auto text-3xl"/>
+					<div class="text-lg font-semibold" >Buyer protection</div>
+				</div>
+				<div class=" mx-9">
+					<Icon name="mdi:cellphone-arrow-down" class="m-auto text-3xl"/>
+					<div class="text-lg font-semibold" >dowland the Aliexpress app</div>
+				</div>
 			</div>
 		</div>
 
+		<!-- <div class=" grid grid-cols-3 bg-red-600 h-[550px] w-[90%] m-auto gap-2">
+			<div class="">
+				<div class="h-[30%]  bg-slate-400 ">
+					<div class=" bg-red-500 h-[100%] rounded-3xl">sd</div>
+				</div>
+				<div class="h-[70%] bg-yellow-400">hf</div>
+			</div >
+			<div class=" bg-yellow-300">absdvb</div>
+			<div class=" bg-orange-500">
+				<div class="h-[55%] bg-blue-500 "></div>
+				<div class="h-[45%] bg-pink-800"></div>
+			</div> -->
+
+			<div class="grid grid-cols-9 grid-rows-7 gap-2 w-[90%] m-auto h-[500px]">
+				<div class="bg-pink-400 col-span-2 row-span-2 rounded">caja</div>
+				<div class="bg-pink-400 col-span-3 row-span-7">caja</div>
+				<div class="bg-pink-400 col-span-4 row-span-4">caja</div>
+				<div class="bg-pink-400 col-span-2 row-span-5">caja</div>
+				<div class="bg-pink-400 col-span-4 row-span-3">caja</div>
+
+			</div>
+		</div>
 		<div class="container banner">banner</div>
 		<nav class="container main_menu">
 			<a href="/">Inicio</a>
